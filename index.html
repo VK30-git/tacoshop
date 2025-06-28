@@ -2,96 +2,90 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="Vishal kumar">
-        <title>Taco Shop</title>
+        <title>LTS-Home</title>
         <link rel="icon" href="10_lesson_starter/favicon.ico">
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <header>
-        <h1>Welcome to the Little Taco Shop</h1>
-        <nav>
-            <ul>
+        <header class="header">
+        <h1 class="header__h1">Little Taco Shop</h1>
+        <nav class="header__nav">
+            <ul class="header__ul">
                 <li>
-                    <a href="#about">about</a>
+                    <a href="#menu">Our Menu</a>
                 </li>
                 <li>
-                    <a href="#menu">our menu</a>
-                </li>
-                <li>
-                    <a href="hours.html">store hours</a>
+                    <a href="hours.html">Store Hours</a>
                 </li>
                 <li>
                     <a href="contact.html">Contact</a>
                 </li>
+                <li>
+                    <a href="about.html">about</a>
+                </li>
             </ul>
         </nav>
-        <figure>
-        <img src="10_lesson_starter/img/tacos_and_drink_400x267.png" alt="tacos and drinks" title="Love tacos" width="400" height="267">
-        <figcaption>taco and drink</figcaption>
-        </figure>
         </header>
-        <br>
-        <main>
-            <hr>
-            <article id="about">
-                <h2>About <abbr title="little taco shop">LTS</abbr></h2>
-                <p>
-                    <abbr title="little taco shop">LTS</abbr> Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis ea totam saepe laudantium qui reprehenderit hic nesciunt voluptates enim voluptas! Accusamus dignissimos dolores praesentium, repellendus voluptate ullam dolor. Consectetur ex asperiores quam commodi quod, quasi eos incidunt dicta, provident molestias ipsum, quia nostrum porro. Sint aliquam sit aperiam quis laboriosam?
-                </p>
-                <aside>
-                    <h3>taco trivia</h3>
-                    <details>
-                        <summary>when did tacos first arrive to the US?</summary>
-                        <P>
-                            This daily staple was filling, delicious, and affordable. The Taco was first introduced to the United States in <mark>1905</mark>. Mexican migrants were coming in to work on railroads and other jobs and started to bring their delicious food with them.
-                        </P>
-                    </details>
-                </aside>
-            </article>
-            <hr>
-            <article id="menu">
-                <h2>OUR MENU</h2>
-                <table border="2">
-                    <caption>Our tacos</caption>
+        <section class="hero">
+            <h2 class="hero__h2">Beinvenidos</h2>
+            <figure>
+            <img src="img/tacos_and_drink_1000x667.png" alt="tacos and drinks" title="Love tacos" width="1000" height="667">
+            <figcaption class="offscreen">taco and drink</figcaption>
+        </figure>
+        </section>
+        <br> 
+        <main class="main">
+
+            <article id="menu" class="main__article">
+                <h2 class="menu__h2">OUR MENU</h2> 
+                <table class="menu__container">
+                    <caption class="offscreen">Our tacos</caption>
                     <thead>
                     <tr>
-                        <th>Tacos</th>
-                        <th>QTY</th>
-                        <th>Price</th>
+                        <th class="menu__header" scope="col">Tacos</th>
+                        <th class="menu__header" scope="col">Quantity</th>
+                        <th class="menu__header" scope="col">Price</th>
                     </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <th rowspan="3">Crunchy</th>
-                            <td>1</td><td>$1.40</td>
+                            <th class="menu__item menu__cr" rowspan="3">Crunchy</th>
+                            <td class="menu__item">1</td><td class="menu__item">$1.40</td>
                         </tr>
                         <tr>
-                            <td>2</td><td>$2.40</td>
+                            <td class="menu__item">2</td><td class="menu__item">$2.40</td>
                         </tr>
                         <tr>
-                            <td>3</td><td>$3.25</td>
+                            <td class="menu__item">3</td><td class="menu__item">$3.25</td>
                         </tr>
                         <tr>
-                            <th rowspan="3">Soft</th>
-                            <td>1</td><td>$2.00</td>
+                            <th class="menu__item menu__sf"rowspan="3">Soft</th>
+                            <td class="menu__item">1</td><td class="menu__item">$2.00</td>
                         </tr>
                         <tr>
-                            <td>2</td><td>$3.50</td>
+                            <td class="menu__item">2</td><td class="menu__item">$3.50</td>
                         </tr>
                         <tr>
-                            <td>3</td><td>$4.50</td>
+                            <td class="menu__item">3</td><td class="menu__item">$4.50</td>
                         </tr>
-                        <tr>
-                            <td colspan="3"> Chips and Salsa $2</td>
-                        </tr>
+                        
                     </tbody>
+                    <tfoot> 
+                        <tr>
+                            <td class="menu__item menu__cs" colspan="3"> Chips and Salsa $2</td>
+                        </tr>
+                    </tfoot>
                 </table>
                 <hr>
-                <a href="#">back to top</a>
+                <p class="center">
+                <a href="#">back to top</a></p>
             </article>
-            <hr>
-            <footer>
-                <P>Copyright &copy; The taco shop</P>
+        
+            <footer class="footer">
+                <P>
+                    <span class="nowrap">Copyright &copy;</span> <span class="nowrap">The taco shop</span></P>
             </footer>
         </main>
     </body>

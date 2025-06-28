@@ -2,67 +2,80 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="Vishal kumar">
-        <title>Taco Shop</title>
+        <title>Contact LTS</title>
         <link rel="icon" href="10_lesson_starter/favicon.ico">
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <header>
-        <h1>Contact US</h1>
-        <nav>
-            <ul>
+        <header class="header">
+        <h1 class="header__h1">Contact US</h1>
+        <nav class="header__nav">
+            <ul class="header__ul">
                 <li>
                     <a href="index.html">Home</a>
                 </li>
-                <li>
-                    <a href="index.html#about">about</a>
-                </li>
+               
                 <li>
                     <a href="index.html#menu">our menu</a>
                 </li>
                 <li>
                     <a href="hours.html">store hours</a>
                 </li>
+                <li>
+                    <a href="about.html">about</a>
+                </li>
                 
             </ul>
         </nav>
-        <figure>
-        <img src="10_lesson_starter/img/tacos_close_up_400x260.png" alt="Tangy tacos" title="Love tacos" width="400" height="260">
-        <figcaption>Tangy tacos</figcaption>
-        </figure>
         </header>
+        <section class="hero">
+            <figure>
+            <img src="img/tacos_close_up_1000x649.png" alt="Tangy tacos" title="Love tacos" width="1000" height="649">
+            <figcaption class="offscreen">Tangy tacos</figcaption>
+            </figure>
+        </section>
         <br>
-        <main>
-            <h1>our contact form</h1>
-            <form action="https://httpbin.org/get" method="get">
-            <fieldset>
-                <legend>Send us a message</legend>
-                <p>
-                <label for="Name">Name</label>
-                <input type="text" name="Name" id="Name" placeholder="your name" required autofocus><br>
-                </p>
-                <P>
-                <label for="Email">Email</label>
-                <input type="email" name="Email" id="Email" placeholder="your email@gmail.com" required><br>
-                </P>
-                <label for="message">Your message</label>
-                <textarea name="message"id="message" rows="10" cols="30" placeholder="type your message"></textarea>
-            </fieldset>
-            <button type="submit">send</button>
-            <button type="reset">reset</button>
-            </form>
-            
-            <h1>Our location</h1>
+        <main class="main">
+            <article class="main__article">
+            <h2>Our location</h2>
             <address>
                 555,Taco temptation lane,suite L<br>
                 kanas city,MO 55555-5555
-            </address>
+            
             <p>phone :<a href="tel:555555555">555-555-5555</a></p>
+            </address>
+            </article> 
+            <article class="main__article contact">
+            <h2 class="contact__h2">Our contact form</h2>
+            <form action="https://httpbin.org/get" method="get" class="contact__form">
+            <fieldset class="contact__fieldset">
+                <legend class="offscreen">Send us a message</legend>
+                <p class="contact__p">
+                <label class="contact__label" for="name">Name</label ">
+                <input class="contact__input" type="text" name="Name" id="Name" placeholder="your name" required autofocus><br>
+                </p>
+                <P class="contact__p">
+                <label class="contact__label" for="Email">Email</label>
+                <input class="contact__input" type="email" name="Email" id="Email" placeholder="your email@gmail.com" required><br>
+                </P>
+                <p class="contact__p">
+                <label class="contact__label" for="message">Your message</label>
+                <textarea class="contact__textarea" name="message"id="message" rows="10" cols="30" placeholder="type your message"></textarea>
+                </p>
+            </fieldset>
+            <button class="contact__button" type="submit">send</button>
+            <button class="contact__button" type="reset">reset</button>
+            </form>
+            </article>
+            
             <P><a href="#">back to top</a></P>
-            <hr>
-            <footer>
-                <P>Copyright &copy; The taco shop</P>
-            </footer>
+            
         </main>
+        <footer class="footer">
+                <P>
+                    <span class="nowrap">Copyright &copy;</span> <span class="nowrap">The taco shop</span></P>
+        </footer>
     </body>
 </html> 
